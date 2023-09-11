@@ -1,8 +1,34 @@
-<h1>Shop Inventory</h1>
-
-<h5>Name: </h5>
-<p>{{ name }}</p> <!-- Ubahlah sesuai dengan nama kamu -->
-<h5>Description: </h5>
-<p>{{ description }}</p> 
-<h5>Amount: </h5>
-<p>{{ amount }}</p> <!-- Ubahlah sesuai dengan kelas kamu -->
+<head>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Shop Inventory</h1>
+    <table>
+        <tr>
+            <th>Nama</th>
+            <th>Deskripsi</th>
+            <th>Jumlah</th>
+        </tr>
+        <tr>
+            <td>{{ name }}</td>
+            <td>{{ description }}</td>
+            <td>{{ amount }}</td>
+        </tr>
+    </table>
+</body>
+</html>

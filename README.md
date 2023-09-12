@@ -18,7 +18,7 @@ Virtual environment digunakan untuk medapatkan membatasi atau mengisolasi *packa
 Dalam dunia pengembangan web, terdapat istilah seperti MVC, MVT, dan MVVM. Ketiganya merupakan sebuah konsep arsitektur dalam pengembangan web untuk memisahkan komponen-komponen utama dari suatu aplikasi seperti logika bisnis, tampilan, dan interaksi pengguna. Konsep tersebut ditujukan untuk mempermudah proses dalam pengembangan web dan juga mempermudah proses testing.
 
 Perbedaan dari ketiganya adalah:
-MVT (Model-View-Template)
+### MVT (Model-View-Template)
 - Pengguna mengakses satu URL tertentu.
 - Django akan mencocokkan URL dengan pola yang sesuai dalam berkas urls.py dan menentukan View yang akan menangani permintaan tersebut.
 - View menerima permintaan dan menjalankan logika bisnis yang dibutuhkan oleh aplikasi.
@@ -26,13 +26,13 @@ MVT (Model-View-Template)
 - Setelah Model selesai memproses data dalam basis data, View akan menggunakan templat (HTML) untuk merender data tersebut ke dalam tampilan yang diinginkan.
 - Setelah templat selesai mengatur tampilan, View akan menghasilkan halaman HTML yang telah dirender bersama dengan respons HTTP yang sesuai.
 - Respons HTTP tersebut berisi halaman HTML yang diminta oleh pengguna.
-MVC (Model-View-Controller)
+### MVC (Model-View-Controller)
 - user berinteraksi dengan view dengan melakukan suatu action.
 - action kemudian diteruskan ke Controller, pada Controller action tersebut diproses sesuai kebutuhan aplikasi.
 - Controller akan berinteraksi dengan Model untuk mengambil atau mengubah data pada Model.
 - Setelah berinteraksi dengan Model, Controller akan  mengupdate data yang akan ditampilkan dan mengirimkan ke View.
 - View menerima data dari Controller kemudian mengupdate tampilan interface.
-MVVM (Model-View-ViewModel)
+### MVVM (Model-View-ViewModel)
 - Pengguna berinteraksi dengan Tampilan melalui tindakan yang dilakukan.
 - Tindakan yang diterima oleh Tampilan akan diteruskan ke Model Tampilan (ViewModel).
 - ViewModel mengelola logika bisnis aplikasi dan berfungsi sebagai perantara antara Tampilan dan Model.

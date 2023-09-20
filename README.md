@@ -1,3 +1,19 @@
+# Tugas 3 PBP
+## Perbedaan POST dan GET pada Django
+
+## Screenshot Mengakses Menggunakan POSTMAN
+- HTML
+![html][images/html.png]
+- JSON
+![json][images/json.png]
+- JSON by Id
+![jsonid][images/jsonid.png]
+- XML
+![xml][images/xml.png]
+- XML by Id
+![xmlid][images/xmlid.png]
+
+
 # Tugas 2 PBP
 Link : https://shop-inventory-web.adaptable.app/
 

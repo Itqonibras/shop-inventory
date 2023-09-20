@@ -11,6 +11,9 @@ Pada Django, POST dan GET memiliki beberapa perbedaan dari segi fungsi. POST ada
 
 Secara umum, perbedaannya adalah XML dan JSON digunakan untuk menyimpan data sedangkan HTML untuk mengatur tampilan visual dari data tersebut
 
+## JSON Sering digunakan dalam Pertukaran Data
+JSON lebih sering digunakan dalam pertukaran data pada aplikasi web modern dikarenakan struktur data yang terdapat dalam JSON mudah dipahami dibanding dengan XML atau yang lainnya. Selain itu JSON juga memiliki ukuran yang lebih ringan.
+
 ## Screenshot Mengakses Menggunakan POSTMAN
 HTML
 ![html](images/html.png)

@@ -14,16 +14,20 @@ Secara umum, perbedaannya adalah XML dan JSON digunakan untuk menyimpan data sed
 ## JSON Sering digunakan dalam Pertukaran Data
 JSON lebih sering digunakan dalam pertukaran data pada aplikasi web modern dikarenakan struktur data yang terdapat dalam JSON mudah dipahami dibanding dengan XML atau yang lainnya. Selain itu JSON juga memiliki ukuran yang lebih ringan.
 
+## Implementasi Checklist
+Melanjutkan apa yang saya lakukan di TUgas 2, saya menambahkan form untuk menambahkan data dalam aplikasi saya. Dimulai dengan membuat struktur data untuk form dan juga methodnya yang menggunakan method POST. Tidak lupa saya menambahkan method tadi pada show_main di view.py agar data yang diterima dapat ditampilkan. Setelah itu saya membuat HTML yang digunakan untuk menerima input form dan mengirimkan data ke database. Saya juga membuat template HTML yang digunakan untuk seluruh HTML pada aplikasi. Selanjutnya saya membuat method pada viewa.py untuk menampilkan data berupa JSON dan XML dan memastikan responsnya menggunakan POSTMAN. Terakhir, tidak lupa saya menambahkan path dari method yang sudah saya buat kedalam urls.py pada main.
+
+
 ## Screenshot Mengakses Menggunakan POSTMAN
-HTML
+- HTML
 ![html](images/html.png)
-JSON
+- JSON
 ![json](images/json.png)
-JSON by Id
+- JSON by Id
 ![jsonid](images/jsonid.png)
-XML
+- XML
 ![xml](images/xml.png)
-XML by Id
+- XML by Id
 ![xmlid](images/xmlid.png)
 
 

@@ -3,15 +3,15 @@
 
 ## Screenshot Mengakses Menggunakan POSTMAN
 HTML
-![html][images/html.png]
+![html](images/html.png)
 JSON
-![json][images/json.png]
+![json](images/json.png)
 JSON by Id
-![jsonid][images/jsonid.png]
+![jsonid](images/jsonid.png)
 XML
-![xml][images/xml.png]
+![xml](images/xml.png)
 XML by Id
-![xmlid][images/xmlid.png]
+![xmlid](images/xmlid.png)
 
 
 # Tugas 2 PBP

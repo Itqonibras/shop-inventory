@@ -1,5 +1,15 @@
 # Tugas 3 PBP
 ## Perbedaan POST dan GET pada Django
+Pada Django, POST dan GET memiliki beberapa perbedaan dari segi fungsi. POST adalah metode untuk melakukan pengiriman data. Data yang akan dikirimkan dikemas oleh browser, dienkripsi, dikirim ke server, lalu menerima response. sedangkan metode GET adalah metode untuk mendapatkan data dari server. 
+
+## Perbedaan XML, JSON, HTML dalam Pengiriman Data
+- XML (Extensible Markup Language) digunakan untuk menyimpan dan mengirim data. XML menggunakan tag sebagai representasi datanya dan dapat mempresentasi hampir semua jenis data. Biasanya digunakan dalam web service, dll.
+
+- JSON (JavaScript Object Notation) juga memiliki fungsi untuk menyimpan dan mengirimkan data seperti XML. Namun, JSON merupakan format pertukaran data terbuka dan mudah dibaca oleh mesin maupun manusia. Hal tersebut dikarenakan JSON menggunakan struktur data pada JavaScipt yaitu berupa key dan value.
+
+- HTML (Hypertext Markup Language) adalah bahasa yang digunakan untuk membuat halaman web. HTML menggunakan tag untuk merepresentasikan elemen-elemennya.
+
+Secara umum, perbedaannya adalah XML dan JSON digunakan untuk menyimpan data sedangkan HTML untuk mengatur tampilan visual dari data tersebut
 
 ## Screenshot Mengakses Menggunakan POSTMAN
 HTML

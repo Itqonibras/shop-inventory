@@ -2,15 +2,15 @@
 ## Perbedaan POST dan GET pada Django
 
 ## Screenshot Mengakses Menggunakan POSTMAN
-- HTML
+HTML
 ![html][images/html.png]
-- JSON
+JSON
 ![json][images/json.png]
-- JSON by Id
+JSON by Id
 ![jsonid][images/jsonid.png]
-- XML
+XML
 ![xml][images/xml.png]
-- XML by Id
+XML by Id
 ![xmlid][images/xmlid.png]
 
 

@@ -1,3 +1,29 @@
+# Tugas 4
+## Apa itu UserCreationForm?
+UserCreationForm merupakan formulir yang disediakan oleh Django untuk membuat pengguna baru yang dapat menggunakan aplikasi web kita. Formulir ini memiliki tiga bidang yaitu username, password1, dan password2 (password2 digunakan untuk konfirmasi password).
+
+Kelebihan UserCreationForm:
+- UserCreationForm merupakan formulir built-in pada Django yang artinya kita tidak perlu untuk membuat dari awal.
+- Terdapat Validasi Data: UserCreationForm menyediakan validasi data bawaan, seperti memastikan kata sandi yang dimasukkan memenuhi kebijakan keamanan tertentu.
+
+Kekurangan UserCreationForm:
+- Keterbatasan Desain: UserCreationForm memiliki tampilan default yang sederhana dan mungkin tidak sesuai dengan visual aplikasi kita. Kita harus melakukan penyesuaian secara manual jika ingin memiliki tampilan menarik.
+- Tidak ada Perlindungan Tambahan: Meskipun Djago melakukan validasi dasar, tidak ada perlindungan tambahan seperti captcha atau pertanyaan tambahan. UserCreationForm juga tidak melakukan validasi email secara default.
+
+## Perbedaan Autentikasi dan Otorisasi Django
+Autentikasi adalah proses verifikasi identitas pengguna. Dalam Django, biasanya proses ini memerlukan pengguna untuk memasukkan nama pengguna dan kata sandi, yang kemudian dibandingkan dengan data yang disimpan dalam database. Proses autentikasi bertujuan untuk memastikan bahwa pengguna yang mengakses sistem adalah orang yang memiliki hak dalam mengaksesnya.
+
+Sedangkan otorisasi merupakan proses penentuan apa yang dapat diakses pengguna setelah melakukan autentikasi. Biasanya melibatkan pengecekan terhadap peran atau hak akses pengguna apakah mereka diizinkan untuk melakukan tindakan tertentu. Contoh dari otorisasi adalah akun Admin memiliki akses lebih dibandingkan dengan akun pengguna biasa.
+
+Singkatnya, autentikasi membantu memastikan hanya pengguna yang sah yang dapat mengakses aplikasi, sedangkan otorisasi membantu membatasi apa yang dapat dilakukan setelah proses autentikasi. Kedua konsep ini penting untuk mencegah akses yang tidak sah dan penyalahgunaan aplikasi.
+## Pengertian Cookies dan Penggunaannya pada Django
+Cookies adalah sejumlah data berukuran kecil berisi informasi yang dikirim oleh server web ke browser dan kemudian dikirim kembali oleh peramban pada page request. Cookies diletakkan di komputer kita ketika kita mengunjungi suatu website. Dalam Django, cookies biasanya digunakan untuk mengelola data sesi pengguna seperti informasi login, pengaturan website, dan menyesuaikan referensi konten yang sesuai penggunanya. Penyimpanan data tersebut disimpan oleh Django pada browser pengguna. Secara singkatnya, cookies adalah "ingatan" Django tentang pengguna dan preferensinya.
+## Keamanan dalam Penggunaan Cookies
+Penggunaan cookies memang membawa manfaat yang signifikan dalam pengembangan web. Namun, terdapat beberapa resiko dari penggunaan cookies yang perlu diwaspadai, seperti:
+- Masalah Privasi: Berdasarkan penggunaan dan sistem kerja pada cookies, secara umum cookies bisa disebut membahayakan privasi karena menyimpan data dan user id seseorang.
+- Masalah Keamanan: Cookies merupakan sekumpulan data berisi informasi yang berbentuk teks. Oleh karena itu, cookies dapat menimbulkan resiko keamanan yang memungkinkan seseorang dapat membuka dan merubah pengaturan cookies seseorang lainnya.
+## Implementasi Checklist
+Hal yang pertama kali saya lakukan adalah membuat method-method pada views.py. Method-method tersebut adalah method register, login_user, logout. Saya juga mengimpor package yang dibutuhkan. Setelah membuat method-method tadi, saya membuat file html untuk tampilan halaman method-method tadi pada folder templates. Lalu saya juga membuat routing method yang sudah dibuat tadi di urls.py pada main. Setelah itu saya meretriksi halaman main agar hanya dapat diakses setelah login. Pada method login_user, saya menambahkan beberapa fungsi untuk mendapatkan sebuah cookie, yaitu data last login. Data last login tadi akan terhapus ketika pengguna logout karena saya menambahkan fungsi untuk menghapus data tersebut pada method logout. Lalu untuk menampilkan last login tadi, saya menambahkan ke method show_main dan mengubah sedikit tampilan html main. Agar setiap object terhubung dengan pembuatnya, saya membuat variable baru pada models.py dengan menggunakan foreignkey. Lalu saya menambahkan beberapa fungsi pada method create_product agar product yang disimpan sesuai dengan pembuatnya. Lalu pada method show_main, saya lakukan filter barang yang ditampilkan hanya barang yang dibuat pembuatnya. Terakhir, saya menjalankan perintah makemigrations pada terminal untuk memigrasi model yang sudah dibuat.
 # Tugas 3 PBP
 ## Perbedaan POST dan GET pada Django
 Pada Django, POST dan GET memiliki beberapa perbedaan dari segi fungsi. POST adalah metode untuk melakukan pengiriman data. Data yang akan dikirimkan dikemas oleh browser, dienkripsi, dikirim ke server, lalu menerima response. sedangkan metode GET adalah metode untuk mendapatkan data dari server. 

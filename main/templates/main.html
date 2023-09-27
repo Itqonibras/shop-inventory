@@ -74,9 +74,19 @@
         <br />
 
     <div class="left-align">
+        <h5>Sesi terakhir login: {{ last_login }}</h5>
+    </div>
+
+    <div class="left-align">
         <a href="{% url 'main:create_product' %}">
             <button>
                 Add New Product
+            </button>
+        </a>
+        
+        <a href="{% url 'main:logout' %}">
+            <button>
+                Logout
             </button>
         </a>
     </div>

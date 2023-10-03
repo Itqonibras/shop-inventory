@@ -1,13 +1,13 @@
 # Tugas 5
 ## Manfaat Element Selector
-Element selector digunakan untuk menerapkan gaya tampilan kepada suatu element HTML yang sama. Misalnya kita memiliki beberapa element <p> pada suatu file HTML dan ingin menerapkan gaya pada semua element <p>. Kita dapat menerapkan element selector p pada CSS dan mengatur gaya tampilannya kemudian semua elemen <p> akan berubah.
+Element selector digunakan untuk menerapkan gaya tampilan kepada suatu element HTML yang sama. Misalnya kita memiliki beberapa element < p > pada suatu file HTML dan ingin menerapkan gaya pada semua element < p >. Kita dapat menerapkan element selector p pada CSS dan mengatur gaya tampilannya kemudian semua elemen < p > akan berubah.
 ## HTML5 Tag
 Beberapa tag HTML5 yang saya ketahui:
-- <header>: Digunakan untuk mengatur bagian atas aplikasi web seperti judul dan logo.
-- <nav>: Digunakan untuk mengelompokkan elemen-elemen yang terkait dengan navigasi seperti menu.
-- <main>: Berisi dari konten utama suatu halaman web.
-- <footer>: Digunakan untuk mengatur bagian bawah dari aplikasi web. Biasanya digunakan untuk menuliskan hak cipta suatu aplikasi.
-- <section>: Digunakan untuk mengelompokkan elemen-elemen dengan konten terkait.
+- < header >: Digunakan untuk mengatur bagian atas aplikasi web seperti judul dan logo.
+- < nav >: Digunakan untuk mengelompokkan elemen-elemen yang terkait dengan navigasi seperti menu.
+- < main >: Berisi dari konten utama suatu halaman web.
+- < footer >: Digunakan untuk mengatur bagian bawah dari aplikasi web. Biasanya digunakan untuk menuliskan hak cipta suatu aplikasi.
+- < section >: Digunakan untuk mengelompokkan elemen-elemen dengan konten terkait.
 ## Margin vs Padding
 Margin dan padding merupakan properti pada CSS yang mengatur ruang suatu elemen/content. Margin digunakan untuk mengatur ruang diluar elemen. Mudahnya, margin digunakan untuk memberikan jarak suatu elemen dengan elemen lainnya. Sedangkan padding digunakan untuk mengatur ruang didalam elemen. Padding memberikan ruang untuk content yang berada dalam suatu elemen.
 ![margin](images/margin.png)

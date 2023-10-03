@@ -1,3 +1,22 @@
+# Tugas 5
+## Manfaat Element Selector
+Element selector digunakan untuk menerapkan gaya tampilan kepada suatu element HTML yang sama. Misalnya kita memiliki beberapa element <p> pada suatu file HTML dan ingin menerapkan gaya pada semua element <p>. Kita dapat menerapkan element selector p pada CSS dan mengatur gaya tampilannya kemudian semua elemen <p> akan berubah.
+## HTML5 Tag
+Beberapa tag HTML5 yang saya ketahui:
+- <header>: Digunakan untuk mengatur bagian atas aplikasi web seperti judul dan logo.
+- <nav>: Digunakan untuk mengelompokkan elemen-elemen yang terkait dengan navigasi seperti menu.
+- <main>: Berisi dari konten utama suatu halaman web.
+- <footer>: Digunakan untuk mengatur bagian bawah dari aplikasi web. Biasanya digunakan untuk menuliskan hak cipta suatu aplikasi.
+- <section>: Digunakan untuk mengelompokkan elemen-elemen dengan konten terkait.
+## Margin vs Padding
+Margin dan padding merupakan properti pada CSS yang mengatur ruang suatu elemen/content. Margin digunakan untuk mengatur ruang diluar elemen. Mudahnya, margin digunakan untuk memberikan jarak suatu elemen dengan elemen lainnya. Sedangkan padding digunakan untuk mengatur ruang didalam elemen. Padding memberikan ruang untuk content yang berada dalam suatu elemen.
+![margin](images/margin.png)
+Contoh Margin.
+![padding](images/padding.png)
+Contoh Padding.
+## Tailwind vs Bootstrap
+Tailwind dan Bootstrap merupakan framework CSS yang paling sering digunakan oleh orang-orang. Perbedaan keduanya terdapat pada fitur apa yang ditawarkan. Bootstrap memiliki banyak komponen yang siap pakai dan mudah disesuaikan dalam desain web. Sedangkan Tailwind dapat memungkinkan kita untuk mengkostumisasi tampilan komponen kita sendiri. Terkait penggunaannya, dapat disesuaikan dengan kebutuhan kita. Kita dapat menggunakan Bootstrap ketika kita membutuhkan komponen yang sudah siap pakai. Sedangkan ketika kita ingin memiliki kontrol lebih dalam desain kita, maka kita dapat menggunakan Tailwind.
+
 # Tugas 4
 ## Apa itu UserCreationForm?
 UserCreationForm merupakan formulir yang disediakan oleh Django untuk membuat pengguna baru yang dapat menggunakan aplikasi web kita. Formulir ini memiliki tiga bidang yaitu username, password1, dan password2 (password2 digunakan untuk konfirmasi password).
@@ -24,6 +43,7 @@ Penggunaan cookies memang membawa manfaat yang signifikan dalam pengembangan web
 - Masalah Keamanan: Cookies merupakan sekumpulan data berisi informasi yang berbentuk teks. Oleh karena itu, cookies dapat menimbulkan resiko keamanan yang memungkinkan seseorang dapat membuka dan merubah pengaturan cookies seseorang lainnya.
 ## Implementasi Checklist
 Hal yang pertama kali saya lakukan adalah membuat method-method pada views.py. Method-method tersebut adalah method register, login_user, logout. Saya juga mengimpor package yang dibutuhkan. Setelah membuat method-method tadi, saya membuat file html untuk tampilan halaman method-method tadi pada folder templates. Lalu saya juga membuat routing method yang sudah dibuat tadi di urls.py pada main. Setelah itu saya meretriksi halaman main agar hanya dapat diakses setelah login. Pada method login_user, saya menambahkan beberapa fungsi untuk mendapatkan sebuah cookie, yaitu data last login. Data last login tadi akan terhapus ketika pengguna logout karena saya menambahkan fungsi untuk menghapus data tersebut pada method logout. Lalu untuk menampilkan last login tadi, saya menambahkan ke method show_main dan mengubah sedikit tampilan html main. Agar setiap object terhubung dengan pembuatnya, saya membuat variable baru pada models.py dengan menggunakan foreignkey. Lalu saya menambahkan beberapa fungsi pada method create_product agar product yang disimpan sesuai dengan pembuatnya. Lalu pada method show_main, saya lakukan filter barang yang ditampilkan hanya barang yang dibuat pembuatnya. Terakhir, saya menjalankan perintah makemigrations pada terminal untuk memigrasi model yang sudah dibuat.
+
 # Tugas 3 PBP
 ## Perbedaan POST dan GET pada Django
 Pada Django, POST dan GET memiliki beberapa perbedaan dari segi fungsi. POST adalah metode untuk melakukan pengiriman data. Data yang akan dikirimkan dikemas oleh browser, dienkripsi, dikirim ke server, lalu menerima response. sedangkan metode GET adalah metode untuk mendapatkan data dari server. 

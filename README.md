@@ -16,6 +16,8 @@ Contoh Margin.
 Contoh Padding.
 ## Tailwind vs Bootstrap
 Tailwind dan Bootstrap merupakan framework CSS yang paling sering digunakan oleh orang-orang. Perbedaan keduanya terdapat pada fitur apa yang ditawarkan. Bootstrap memiliki banyak komponen yang siap pakai dan mudah disesuaikan dalam desain web. Sedangkan Tailwind dapat memungkinkan kita untuk mengkostumisasi tampilan komponen kita sendiri. Terkait penggunaannya, dapat disesuaikan dengan kebutuhan kita. Kita dapat menggunakan Bootstrap ketika kita membutuhkan komponen yang sudah siap pakai. Sedangkan ketika kita ingin memiliki kontrol lebih dalam desain kita, maka kita dapat menggunakan Tailwind.
+## Implementasi Checklist
+Sebelum masuk ke implementasi cheklist, saya membuat dua buah fungsi baru create_product dan delete_product dan melakukan routing untuk keduanya pada urls.py. Setelah itu barulah saya memulai mengubah tampilan aplikasi. langkah pertama yang saya lakukan adalah menambahkan framework bootstrap untuk semua halaman pada aplikasi dengan menambahkan pada base.html. Kemudian saya mengatur tiap konten pada halaman agar enak dipandang dengan menambahkan padding untuk setiap konten yang ada pada setiap halaman. Saya juga mengatur warna untuk row terakhir pada table di main.html dengan menambahkan atribut pada tag style. Terakhir saya membuat navbar untuk setiap halaman.
 
 # Tugas 4
 ## Apa itu UserCreationForm?

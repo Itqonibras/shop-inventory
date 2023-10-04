@@ -1,34 +1,63 @@
 {% extends 'base.html' %}
 
 {% block meta %}
-    <title>Register</title>
+<title>Register</title>
 {% endblock meta %}
 
-{% block content %}  
+{% block content %}
 
-<div class = "login">
-    
-    <h1>Register</h1>  
+<style>
+    .register-container {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        height: 100vh;
+        padding: 50px;
+    }
 
-        <form method="POST" >  
-            {% csrf_token %}  
-            <table>  
-                {{ form.as_table }}  
-                <tr>  
+    h1 {
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    form {
+        margin-top: 25px;
+    }
+
+</style>
+
+<nav class="navbar bg-dark">
+    <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1 text-white">Shopping List</span>
+    </div>
+</nav>
+
+<div class="register-container">
+    <div class="login">
+
+        <h1>Register</h1>
+
+        <form method="POST">
+            {% csrf_token %}
+            <table>
+                {{ form.as_table }}
+                <tr>
                     <td></td>
-                    <td><input type="submit" name="submit" value="Daftar"/></td>  
-                </tr>  
-            </table>  
+                    <td><input type="submit" name="submit" value="Daftar" /></td>
+                </tr>
+            </table>
         </form>
 
-    {% if messages %}  
-        <ul>   
-            {% for message in messages %}  
-                <li>{{ message }}</li>  
-                {% endfor %}  
-        </ul>   
-    {% endif %}
+        {% if messages %}
+        <ul>
+            {% for message in messages %}
+            <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
 
-</div>  
+    </div>
+</div>
 
 {% endblock content %}

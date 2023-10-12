@@ -1,3 +1,21 @@
+# Tugas 6
+## Sinkronus dan Asinkronus dalam Pemrograman
+**Sinkronus** dalam pemrograman berarti program yang dieksekusi berjalan secara berurutan. Program tidak akan lanjut ke barisan berikutnya sebelum baris yang dieksekusi selesai berjalan. Sedangkan **Asinkronus** berarti program yang dieksekusi dapat berjalan secara bersamaan tanpa harus menunggu operasi sebelumnya selesai dijalankan.
+## Paradigma Event-Driven Programming dalam JavaScript dan AJAX
+Paradigma event-driven programming dalam JavaScript dan AJAX adalah pendekatan dimana sebuah program merespon event atau peristiwa yang terjadi. Contoh dalam tugas ini adalah sebuah method add_product_ajax yang di mana ketika method dijalankan program akan merespon dengan mengirim data ke server dan mengembalikan response.
+## Penerapan Asynchronous pada AJAX
+Penerapan asinkronus pada AJAX biasanya dilakukan ketika membuat permintaan AJAX seperti mengambil data dari server. Contohnya bisa dilihat pada penggunaan fetch(), await() dan then(). fetch() berfungsi untuk membuat permintaan ke server, await() untuk menunggu kode yang sedang berjalan selesai dijalankan, dan then() untuk memanggil method yang akan dijalankan setelah proses fetch selesai
+## Perbandingan Fetch API dengan jQuery untuk Penerapan AJAX
+**Fetch API** adalah standar JavaScript yang disediakan oleh browser modern yang merupakan cara bawaan untuk membuat permintaan HTTP dan mengelola responsnya.
+Fetch API lebih modern dan lebih ringan daripada jQuery, yang berarti lebih efisien dalam hal ukuran dan kinerja.
+Lebih modular dan memungkinkan untuk menggunakan berbagai jenis respons, seperti JSON, teks, atau bahkan BLOB.
+
+**jQuery** adalah pustaka JavaScript yang lebih tua dan lebih besar yang menyediakan banyak fitur dan utilitas, termasuk AJAX.
+Kompatibilitas lintas browser yang baik, karena jQuery merawat perbedaan implementasi di berbagai browser.
+
+Kita dapat menggunakan fetch API ketika mengembangkan aplikasi web modern di mana kinerja, ukuran, dan kejelasan kode adalah hal yang penting.
+## Implementasi Checklist
+Hal yang pertama kali saya lakukan adalah membuat method `add_product` dan `delete_product` yang menggunakan ajax dan method `get_product` dari JSON pada `views.py`, lalu mendaftarkannya pada `urls.py` pada app main. Langkah selanjutnya saya mengubah tabel pada `main.html` menjadi sebuah fungsi yang mengimplementasikan method `get_product_json` tadi. Setelah itu saya membuat sebuah button yang akan menambilkan modal dan button untuk menghapus product. Selanjutnya saya menambahkan Modal pada `main.html` yang menampilkan form dan terdapat sebuah tombol untuk melakukan input data form tadi yang mengimplementasikan method `add_product_ajax`. Terakhir saya melakukan perintah Collecstatic pada terminal.
 # Tugas 5
 ## Manfaat Element Selector
 Element selector digunakan untuk menerapkan gaya tampilan kepada suatu element HTML yang sama. Misalnya kita memiliki beberapa element < p > pada suatu file HTML dan ingin menerapkan gaya pada semua element < p >. Kita dapat menerapkan element selector p pada CSS dan mengatur gaya tampilannya kemudian semua elemen < p > akan berubah.
@@ -122,6 +140,3 @@ Perbedaan dari ketiganya adalah:
 - Kemudian, ViewModel akan menjalankan proses yang dibutuhkan oleh aplikasi pada data yang diterima sebelum mengirimkannya kembali ke Tampilan.
 - Setelah data yang telah diproses diteruskan ke Tampilan, Tampilan akan melakukan pengaturan tampilan sesuai dengan kebutuhan.
 - Setelah itu, pengguna dapat melihat tampilan yang telah diperbarui dan siap untuk melakukan interaksi selanjutnya.
-
-
-

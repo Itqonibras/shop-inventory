@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.http import HttpResponseRedirect
+from django.http import HttpResponseNotFound, HttpResponseRedirect
 from main.forms import ProductForm
 from django.urls import reverse
 from main.models import Product
@@ -14,6 +14,7 @@ from django.contrib.auth.decorators import login_required
 import datetime
 from django.http import HttpResponseRedirect
 from django.urls import reverse
+from django.views.decorators.csrf import csrf_exempt
 
 # Create your views here.
 
@@ -125,3 +126,32 @@ def delete_product(request, id):
     product = Product.objects.get(pk=id)
     product.delete()
     return HttpResponseRedirect(reverse('main:show_main'))
+
+def get_product_json(request):
+    product_item = Product.objects.filter(user=request.user)
+    return HttpResponse(serializers.serialize('json', product_item))
+
+@csrf_exempt
+def add_product_ajax(request):
+    if request.method == 'POST':
+        name = request.POST.get("name")
+        amount = request.POST.get("amount")
+        description = request.POST.get("description")
+        user = request.user
+
+        new_product = Product(name=name, amount=amount, description=description, user=user)
+        new_product.save()
+
+        return HttpResponse(b"CREATED", status=201)
+
+    return HttpResponseNotFound()
+
+@csrf_exempt
+def delete_product_ajax(request):
+    if request.method == 'POST':
+        id = request.POST.get('id')
+        product = Product.objects.get(pk=id)
+        product.delete()
+        return HttpResponse(b"OK", status=200)
+
+    return HttpResponseNotFound()

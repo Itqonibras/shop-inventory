@@ -1,4 +1,6 @@
 # Tugas 6
+link: nibras-itqon-tugas.pbp.cs.ui.ac.id
+
 ## Sinkronus dan Asinkronus dalam Pemrograman
 **Sinkronus** dalam pemrograman berarti program yang dieksekusi berjalan secara berurutan. Program tidak akan lanjut ke barisan berikutnya sebelum baris yang dieksekusi selesai berjalan. Sedangkan **Asinkronus** berarti program yang dieksekusi dapat berjalan secara bersamaan tanpa harus menunggu operasi sebelumnya selesai dijalankan.
 ## Paradigma Event-Driven Programming dalam JavaScript dan AJAX
